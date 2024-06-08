@@ -106,7 +106,7 @@ const VehicleInfoForm = () => {
     console.log('Sending token:', token);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/vehicles/create', formData, {
+      const response = await axios.post('https://backend1-9zlm.onrender.com/api/vehicles/create', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`
