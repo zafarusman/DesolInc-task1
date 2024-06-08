@@ -42,7 +42,7 @@ function Login({ setLoggedIn }) {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/users/login', { email, password });
+      const response = await axios.post('https://backend1-9zlm.onrender.com/api/users/login', { email, password });
 
       if (response.data) {
         setLoggedIn(true);
